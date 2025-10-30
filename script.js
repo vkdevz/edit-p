@@ -705,12 +705,12 @@ document.addEventListener('paste', (e) => {
 let devtools = { open: false, orientation: null };
 const threshold = 160;
 
-const emitEvent = (isOpen, orientation) => {
-    if (isOpen) {
-        console.clear();
-        document.body.innerHTML = '<h1 style="color:#00c8ff;text-align:center;margin-top:20%;">Developer Tools Detected!<br>Please close to continue.</h1>';
-    }
-};
+// const emitEvent = (isOpen, orientation) => {
+//    if (isOpen) {
+//         console.clear();
+//         document.body.innerHTML = '<h1 style="color:#00c8ff;text-align:center;margin-top:20%;">Developer Tools Detected!<br>Please close to continue.</h1>';
+//     }
+// };
 
 setInterval(() => {
     const widthThreshold = window.outerWidth - window.innerWidth > threshold;
@@ -741,9 +741,9 @@ document.addEventListener('dragstart', (e) => {
 });
 
 // Console warning message
-console.log('%cSTOP!', 'color: red; font-size: 60px; font-weight: bold;');
-console.log('%cThis is a browser feature intended for developers. If someone told you to copy-paste something here, it is a scam.', 'font-size: 20px;');
-console.log('%c⚠️ Unauthorized access to this website\'s code is prohibited.', 'color: #ff6b35; font-size: 16px; font-weight: bold;');
+// console.log('%cSTOP!', 'color: red; font-size: 60px; font-weight: bold;');
+// console.log('%cThis is a browser feature intended for developers. If someone told you to copy-paste something here, it is a scam.', 'font-size: 20px;');
+// console.log('%c⚠️ Unauthorized access to this website\'s code is prohibited.', 'color: #ff6b35; font-size: 16px; font-weight: bold;');
 
 // Watermark images to prevent download
 document.querySelectorAll('img').forEach(img => {
