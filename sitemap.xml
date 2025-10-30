@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Home Page -->
+    <url>
+        <loc>https://vkshotz.com/</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Page -->
+    <url>
+        <loc>https://vkshotz.com/#about</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Services Page -->
+    <url>
+        <loc>https://vkshotz.com/#services</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Portfolio Page -->
+    <url>
+        <loc>https://vkshotz.com/#portfolio</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://vkshotz.com/assets/portfolio/project1-thumb.jpg</image:loc>
+            <image:caption>Cinematic Travel Reel - Professional Color Grading</image:caption>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://vkshotz.com/assets/portfolio/project1-thumb.jpg</video:thumbnail_loc>
+            <video:title>Cinematic Travel Reel</video:title>
+            <video:description>HDR color grading with moody teal and orange tones for Instagram reel</video:description>
+            <video:content_loc>https://www.instagram.com/p/EXAMPLE1/</video:content_loc>
+            <video:duration>45</video:duration>
+        </video:video>
+    </url>
+    
+    <!-- Testimonials Page -->
+    <url>
+        <loc>https://vkshotz.com/#testimonials</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://vkshotz.com/#contact</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+</urlset>

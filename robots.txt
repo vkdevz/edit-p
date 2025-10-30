@@ -1,0 +1,24 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://vkshotz.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 10
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /assets/
+
+# Allow social media bots for Open Graph
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
