@@ -21,29 +21,8 @@ window.addEventListener('load', () => {
 const cursorDot = document.getElementById('cursor-dot');
 const cursorOutline = document.getElementById('cursor-outline');
 
-window.addEventListener('mousemove', (e) => {
-    const posX = e.clientX;
-    const posY = e.clientY;
-    
-    cursorDot.style.left = `${posX}px`;
-    cursorDot.style.top = `${posY}px`;
-    
-    cursorOutline.style.left = `${posX}px`;
-    cursorOutline.style.top = `${posY}px`;
-});
 
-// Cursor hover effect
-document.querySelectorAll('a, button').forEach(elem => {
-    elem.addEventListener('mouseenter', () => {
-        cursorDot.style.transform = 'scale(1.5)';
-        cursorOutline.style.transform = 'scale(1.5)';
-    });
-    
-    elem.addEventListener('mouseleave', () => {
-        cursorDot.style.transform = 'scale(1)';
-        cursorOutline.style.transform = 'scale(1)';
-    });
-});
+
 
 // =============================================================================
 // Navigation
@@ -701,38 +680,38 @@ document.addEventListener('paste', (e) => {
     return false;
 });
 
-// Detect DevTools (Advanced - Optional)
-let devtools = { open: false, orientation: null };
-const threshold = 160;
+// // Detect DevTools (Advanced - Optional)
+// let devtools = { open: false, orientation: null };
+// const threshold = 160;
 
 // const emitEvent = (isOpen, orientation) => {
-//    if (isOpen) {
+//     if (isOpen) {
 //         console.clear();
 //         document.body.innerHTML = '<h1 style="color:#00c8ff;text-align:center;margin-top:20%;">Developer Tools Detected!<br>Please close to continue.</h1>';
 //     }
 // };
 
-setInterval(() => {
-    const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-    const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-    const orientation = widthThreshold ? 'vertical' : 'horizontal';
+// setInterval(() => {
+//     const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+//     const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+//     const orientation = widthThreshold ? 'vertical' : 'horizontal';
     
-    if (!(heightThreshold && widthThreshold) && 
-        ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || 
-         widthThreshold || heightThreshold)) {
-        if (!devtools.open || devtools.orientation !== orientation) {
-            emitEvent(true, orientation);
-            devtools.open = true;
-            devtools.orientation = orientation;
-        }
-    } else {
-        if (devtools.open) {
-            emitEvent(false, null);
-            devtools.open = false;
-            devtools.orientation = null;
-        }
-    }
-}, 500);
+//     if (!(heightThreshold && widthThreshold) && 
+//         ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || 
+//          widthThreshold || heightThreshold)) {
+//         if (!devtools.open || devtools.orientation !== orientation) {
+//             emitEvent(true, orientation);
+//             devtools.open = true;
+//             devtools.orientation = orientation;
+//         }
+//     } else {
+//         if (devtools.open) {
+//             emitEvent(false, null);
+//             devtools.open = false;
+//             devtools.orientation = null;
+//         }
+//     }
+// }, 500);
 
 // Disable drag and drop
 document.addEventListener('dragstart', (e) => {
@@ -741,9 +720,9 @@ document.addEventListener('dragstart', (e) => {
 });
 
 // Console warning message
-// console.log('%cSTOP!', 'color: red; font-size: 60px; font-weight: bold;');
-// console.log('%cThis is a browser feature intended for developers. If someone told you to copy-paste something here, it is a scam.', 'font-size: 20px;');
-// console.log('%c⚠️ Unauthorized access to this website\'s code is prohibited.', 'color: #ff6b35; font-size: 16px; font-weight: bold;');
+console.log('%cSTOP!', 'color: red; font-size: 60px; font-weight: bold;');
+console.log('%cThis is a browser feature intended for developers. If someone told you to copy-paste something here, it is a scam.', 'font-size: 20px;');
+console.log('%c⚠️ Unauthorized access to this website\'s code is prohibited.', 'color: #ff6b35; font-size: 16px; font-weight: bold;');
 
 // Watermark images to prevent download
 document.querySelectorAll('img').forEach(img => {
