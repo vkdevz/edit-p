@@ -1,7 +1,33 @@
 {
-  "name": "edit-p",
+  "name": "vkshotz-work",
   "version": "1.0.0",
+  "description": "Professional portfolio website for VK.SHOTZ specializing in cinematic Instagram reels and color grading. Fully responsive and SEO-optimized.",
+  "main": "index.html",
   "scripts": {
-    "build": "echo 'No build step required'"
+    "start": "npx http-server -p 8080",
+    "minify-css": "npx csso style.css -o style.min.css",
+    "minify-js": "npx terser script.js -o script.min.js -c -m",
+    "optimize-images": "npx imagemin assets/**/*.{jpg,png} --out-dir=assets/optimized",
+    "build": "npm run minify-css && npm run minify-js",
+    "lighthouse": "npx lighthouse http://localhost:8080 --view"
+  },
+  "keywords": [
+    "video-editor",
+    "portfolio",
+    "color-grading",
+    "instagram-reels",
+    "cinematic-editing",
+    "SEO",
+    "responsive",
+    "vanilla-js"
+  ],
+  "author": "VK.SHOTZ",
+  "license": "MIT",
+  "devDependencies": {
+    "csso-cli": "^4.0.2",
+    "terser": "^5.19.2",
+    "imagemin-cli": "^7.0.0",
+    "http-server": "^14.1.1",
+    "lighthouse": "^11.0.0"
   }
 }
