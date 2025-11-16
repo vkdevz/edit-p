@@ -657,15 +657,15 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Disable text selection
-document.addEventListener('selectstart', (e) => {
-    e.preventDefault();
-    return false;
+// document.addEventListener('selectstart', (e) => {
+//     e.preventDefault();
+//     return false;
 });
 
 // Disable copy
-document.addEventListener('copy', (e) => {
-    e.preventDefault();
-    return false;
+// document.addEventListener('copy', (e) => {
+//     e.preventDefault();
+//     return false;
 });
 
 // Disable cut
