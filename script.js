@@ -8,12 +8,12 @@
 // =============================================================================
 // Loading Animation
 // =============================================================================
-window.addEventListener('load', () => {
-    const loading = document.getElementById('loading');
-    setTimeout(() => {
-        loading.classList.add('hidden');
-    }, 1500);
-});
+//window.addEventListener('load', () => {
+   // const loading = document.getElementById('loading');
+   // setTimeout(() => {
+    //    loading.classList.add('hidden');
+  //  }, 1500);
+//});
 
 // =============================================================================
 // Custom Cursor
